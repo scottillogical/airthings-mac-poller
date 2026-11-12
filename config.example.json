@@ -1,0 +1,16 @@
+{
+  "interval": 300,
+  "scan_seconds": 20,
+  "stale_after": 900,
+  "devices": [
+    {"serial": "YOUR_WAVE_RADON_SERIAL", "name": "Wave Radon Local"},
+    {"serial": "YOUR_WAVE_ENHANCE_SERIAL", "name": "Wave Enhance Local"}
+  ],
+  "mqtt": {
+    "host": "homeassistant.local",
+    "port": 1883,
+    "username": "airthings_poller",
+    "password_env": "AIRTHINGS_MQTT_PASSWORD",
+    "tls": false
+  }
+}

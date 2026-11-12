@@ -1,0 +1,10 @@
+airthings-ble @ git+https://github.com/Airthings/airthings-ble.git@ab83bb2f7360d42343a22d3580ec04e3c75ae858
+async-interrupt==1.2.2
+bleak==3.1.0
+bleak-retry-connector==4.7.1
+cbor2==5.9.0
+paho-mqtt==2.1.0
+pyobjc-core==13.0; sys_platform == 'darwin'
+pyobjc-framework-Cocoa==13.0; sys_platform == 'darwin'
+pyobjc-framework-CoreBluetooth==13.0; sys_platform == 'darwin'
+pyobjc-framework-libdispatch==13.0; sys_platform == 'darwin'

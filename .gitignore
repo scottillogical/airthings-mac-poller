@@ -1,0 +1,14 @@
+.bootstrap/
+.runtime/
+.venv/
+vendor-airthings-ble/
+__pycache__/
+*.pyc
+config.json
+results/
+state/
+logs/
+RESULTS.md
+requirements.lock.txt
+*.plist
+.DS_Store
