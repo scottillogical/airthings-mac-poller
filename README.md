@@ -16,8 +16,11 @@ Tested on an Intel Mac running macOS Sonoma with Python 3.13. Both physical devi
 returned readings in three successive test rounds (six successful reads). The
 production collector also read both devices successfully. Offline tests cover unit
 conversion, invalid values, discovery metadata, stable identifiers, and private
-state-file permissions. MQTT delivery and Home Assistant entity creation have not
-yet been verified against the target Home Assistant installation.
+state-file permissions. Authenticated MQTT delivery was verified for both devices,
+and Home Assistant created all 13 sensors (five Wave Radon, eight Wave Enhance).
+Live values and units were checked in Home Assistant. Initial non-retained state
+can arrive before a newly discovered entity is ready; the next successful poll
+populates it automatically.
 
 Successful reads confirm Bluetooth transport, not that the sensor has taken a new
 measurement. Radon readings are device-calculated averages and change slowly.
