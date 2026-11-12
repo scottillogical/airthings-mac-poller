@@ -12,3 +12,5 @@ RESULTS.md
 requirements.lock.txt
 *.plist
 .DS_Store
+
+mqtt-password.txt

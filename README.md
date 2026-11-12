@@ -111,7 +111,10 @@ logs in, not before login. A background launch may require its own Bluetooth
 permission: verify real updates after installing it. No startup service is
 installed automatically by this repository. For MQTT, provide its password to
 the background process through a private local mechanism; interactive shell
-environment variables are not automatically inherited by LaunchAgents.
+environment variables are not automatically inherited by LaunchAgents. The optional
+`run_local.py` launcher reads `mqtt-password.txt` (excluded from Git, must be mode
+600) into `AIRTHINGS_MQTT_PASSWORD` and then starts the collector. Point a
+LaunchAgent at this launcher if using that file. Never commit the password file.
 
 ## Tests
 
